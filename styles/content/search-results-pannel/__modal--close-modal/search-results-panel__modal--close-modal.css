@@ -1,0 +1,18 @@
+.search-results-panel__modal--close-modal {
+  position: absolute;
+  font-family: sans-serif;
+  z-index: 5;
+  text-shadow: 2px 2px 2px black;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.search-results-panel__modal--close-modal:hover,
+.search-results-panel__modal--close-modal:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}

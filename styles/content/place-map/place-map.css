@@ -1,0 +1,6 @@
+.place-map {
+  position: relative;
+  background-color: rgb(201, 201, 201);
+  flex-basis: 80%;
+  flex-shrink: 10;
+}

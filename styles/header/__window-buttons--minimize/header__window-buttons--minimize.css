@@ -1,0 +1,6 @@
+.header__window-buttons--minimize {
+  background: radial-gradient(#fafafa 50%, #d0d0d0 100%);
+}
+.header__window-buttons--minimize:hover {
+  background: radial-gradient(#ddd 50%, #bbb 100%);
+}

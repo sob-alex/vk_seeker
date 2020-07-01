@@ -1,0 +1,24 @@
+.settings-panel__label-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 2.5vh;
+
+  user-select: none;
+}
+
+.settings-panel__label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .settings-panel__label-container {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,4 @@
+.search-results-panel__row {
+  display: flex;
+  flex-wrap: wrap;
+}

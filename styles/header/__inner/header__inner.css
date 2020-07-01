@@ -1,0 +1,13 @@
+.header__inner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 7.5%;
+  background: linear-gradient(#444, #222);
+
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}

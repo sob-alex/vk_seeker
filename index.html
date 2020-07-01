@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?skin=dark&pkg=full"></script>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/main-container.css" />
+    <link rel="stylesheet" href="styles/header/header.css" />
+    <link rel="stylesheet" href="styles/header/__inner/header__inner.css" />
+    <link rel="stylesheet" href="styles/content/content.css" />
+    <link rel="stylesheet" href="styles/content/place-map/place-map.css" />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/add-settings-panel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__filters-flex/add-settings-panel__filters-flex.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__group-filters--city/add-settings-panel__group-filters--city.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__group-filters--members_count/add-settings-panel__group-filters--members_count.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__group-filters/add-settings-panel__group-filters.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__human-filters--age/add-settings-panel__human-filters--age.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__human-filters--city/add-settings-panel__human-filters--city.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__human-filters--common-friend/add-settings-panel__human-filters--common-friend.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__human-filters--relation/add-settings-panel__human-filters--relation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__human-filters--sex/add-settings-panel__human-filters--sex.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__human-filters/add-settings-panel__human-filters.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__is-extended/add-settings-panel__is-extended.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__label-container--checkmark-checkbox/add-settings-panel__label-container--checkmark-checkbox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__label-container--checkmark/add-settings-panel__label-container--checkmark.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__label-container/add-settings-panel__label-container.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__type-search/add-settings-panel__type-search.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/__authorization-form/place-map__authorization-form.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/__open-search-result-panel/place-map__open-search-result-panel.css"
+    />
+    <link rel="stylesheet" href="styles/content/place-map/map/map.css" />
+    <link rel="stylesheet" href="styles/content/settings-panel/settings-panel.css" />
+    <link
+      rel="stylesheet"
+      href="styles/content/settings-panel/__label-container--checkmark/settings-panel__label-container--checkmark.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/settings-panel/__label-container/settings-panel__label-container.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/settings-panel/__other-settings-button/settings-panel__other-settings-button.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/settings-panel/__radius/settings-panel__radius.css"
+    />
+    <link rel="stylesheet" href="styles/content/settings-panel/__sort/settings-panel__sort.css" />
+    <link
+      rel="stylesheet"
+      href="styles/content/settings-panel/__submit/settings-panel__submit.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/settings-panel/__time-bounds/settings-panel__time-bounds.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/settings-panel/__time-bounds-data/settings-panel__time-bounds-data.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/settings-panel/__time-bounds-word-search/settings-panel__time-bounds-word-search.css"
+    />
+    <link rel="stylesheet" href="styles/content/search-results-pannel/search-results-panel.css" />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__close-panel/search-results-panel__close-panel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__content--description/search-results-panel__content--description.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__description--add/search-results-panel__description--add.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__description--date/search-results-panel__description--date.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__description--main/search-results-panel__description--main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__description--mark-on-map/search-results-panel__description--mark-on-map.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__description--person-anchor/search-results-panel__description--person-anchor.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__description--person-name/search-results-panel__description--person-name.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__modal--close-modal/search-results-panel__modal--close-modal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__modal--content/search-results-panel__modal--content.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__modal/search-results-panel__modal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__row/search-results-panel__row.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__row--column/search-results-panel__row--column.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__column--description/search-results-panel__column--description.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__column--description--date/search-results-panel__column--description--date.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__column--description--person-name/search-results-panel__column--description--person-name.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__modal--img/search-results-panel__modal--img.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/search-results-pannel/__show-more/search-results-panel__show-more.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__close/add-settings-panel__close.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__main-filters-flex/add-settings-panel__main-filters-flex.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__main-filters-flex--left-side/add-settings-panel__main-filters-flex--left-side.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__main-filters-flex--right-side/add-settings-panel__main-filters-flex--right-side.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__resolution/add-settings-panel__resolution.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/add-settings-panel/__count-of-results/add-settings-panel__count-of-results.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/__authorization-form--inner/place-map__authorization-form--inner.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/__error-window/place-map__error-window.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/__error-window--inner/place-map__error-window--inner.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/content/place-map/__search-city-panel/place-map__search-sity-pannel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/header/__inner--window-buttons/header__inner--window-buttons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/header/__window-buttons--close/header__window-buttons--close.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/header/__window-buttons--maximize/header__window-buttons--maximize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/header/__window-buttons--minimize/header__window-buttons--minimize.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div style="-webkit-app-region: drag;" class="header">
+        <div class="header__inner">
+          <h1>VK Seeker</h1>
+          <div class="header__inner--window-buttons">
+            <div class="header__window-buttons--minimize">
+              <i class="material-icons" style="font-size: 24px;"> fullscreen_exit</i>
+            </div>
+            <div class="header__window-buttons--maximize">
+              <i class="material-icons" style="font-size: 24px;">fullscreen</i>
+            </div>
+            <div class="header__window-buttons--close">
+              <i class="material-icons" style="font-size: 24px;">close</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="place-map">
+          <!-- Карта -->
+          <div id="map" class="map"></div>
+          <div class="place-map__search-sity-pannel">
+            <input type="text" placeholder="Введите название города" />
+            <i class="material-icons">search</i>
+          </div>
+          <div class="place-map__open-search-result-panel">Показать результаты</div>
+          <div class="place-map__authorization-form">
+            <div class="place-map__authorization-form--inner">
+              <h1>Требуется авторизация</h1>
+              <button>Войти через ВК</button>
+            </div>
+          </div>
+          <div class="place-map__error-window">
+            <div class="place-map__error-window--inner">
+              <i class="material-icons place-map__error-window--inner--close">close</i>
+              <h2>Произошла ошибка</h2>
+              <!-- Сюда выводится сообщение об ошибке в понятном виде -->
+              <h3>Проверьте подключение к интернету</h3>
+              <!-- Сюда выводится сообщение об ошибке как есть -->
+              <p></p>
+            </div>
+          </div>
+          <!-- дополнительная панель фильтров поиска -->
+          <div class="add-settings-panel">
+            <div class="add-settings-panel__close">x</div>
+            <div class="add-settings-panel__main-filters-flex">
+              <div class="add-settings-panel__main-filters-flex--left-side">
+                <div class="add-settings-panel__type-search">
+                  <form>
+                    <label class="add-settings-panel__label-container"
+                      >Все
+                      <input type="radio" name="type-search" data-value="0" checked="checked" />
+                      <span class="add-settings-panel__label-container--checkmark"></span>
+                    </label>
+                    <label class="add-settings-panel__label-container"
+                      >Фото пользователей
+                      <input type="radio" name="type-search" data-value="1" />
+                      <span class="add-settings-panel__label-container--checkmark"></span>
+                    </label>
+                    <label class="add-settings-panel__label-container"
+                      >Фото групп
+                      <input name="type-search" type="radio" data-value="2" />
+                      <span class="add-settings-panel__label-container--checkmark"></span>
+                    </label>
+                  </form>
+                </div>
+                <div class="add-settings-panel__is-extended">
+                  <form>
+                    <label class="add-settings-panel__label-container"
+                      >Расширенный поиск
+                      <input data-value="true" type="checkbox" checked />
+                      <span class="add-settings-panel__label-container--checkmark-checkbox"></span>
+                    </label>
+                  </form>
+                </div>
+              </div>
+              <div class="add-settings-panel__main-filters-flex--right-side">
+                <div class="add-settings-panel__count-of-results">
+                  <p>
+                    Глубина поиска <br />
+                    (по умолчанию 100, макс. 1000):
+                  </p>
+                  <input type="number" min="1" max="1000" value="100" />
+                </div>
+                <div class="add-settings-panel__resolution">
+                  <form>
+                    <label class="add-settings-panel__label-container"
+                      >Понизить разрешение картинок <br />
+                      (возможно будет лучше производительность)
+                      <input data-value="true" type="checkbox" checked />
+                      <span class="add-settings-panel__label-container--checkmark-checkbox"></span>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="add-settings-panel__filters-flex">
+              <div class="add-settings-panel__human-filters">
+                <h2>Фильтр пользователей:</h2>
+                <div class="add-settings-panel__human-filters--sex">
+                  <hr />
+                  <p>Искать:</p>
+
+                  <form>
+                    <label class="add-settings-panel__label-container"
+                      >Всех
+                      <input data-value="-1" name="sex" type="radio" checked="checked" />
+                      <span class="add-settings-panel__label-container--checkmark"></span>
+                    </label>
+                    <label class="add-settings-panel__label-container"
+                      >Мужчин
+                      <input data-value="2" name="sex" type="radio" />
+                      <span class="add-settings-panel__label-container--checkmark"></span>
+                    </label>
+                    <label class="add-settings-panel__label-container"
+                      >Женщин
+                      <input data-value="1" name="sex" type="radio" />
+                      <span class="add-settings-panel__label-container--checkmark"></span>
+                    </label>
+                  </form>
+                </div>
+                <div class="add-settings-panel__human-filters--age">
+                  <p>Укажите возраст:</p>
+
+                  <form>
+                    От:
+                    <input type="number" name="age" min="0" max="100" value="0" />
+                    До:
+                    <input type="number" name="age" min="0" max="100" value="100" />
+                  </form>
+                </div>
+                <div class="add-settings-panel__human-filters--city">
+                  <p>Укажите город:</p>
+                  <input type="text" />
+                </div>
+                <div class="add-settings-panel__human-filters--relation">
+                  <form>
+                    <p>Семейное положение:</p>
+
+                    <select name="relation">
+                      <option data-value="-1">Любое</option>
+                      <option data-value="1">не женат/не замужем</option>
+                      <option data-value="2">есть друг/есть подруга</option>
+                      <option data-value="3">помолвлен/помолвлена</option>
+                      <option data-value="4">женат/замужем</option>
+                      <option data-value="5">всё сложно</option>
+                      <option data-value="6">в активном поиске</option>
+                      <option data-value="7">влюблён/влюблена</option>
+                      <option data-value="8">в гражданском браке</option>
+                    </select>
+                  </form>
+                </div>
+                <div class="add-settings-panel__human-filters--common-friend">
+                  <label class="add-settings-panel__label-container">
+                    <p>Искать тех, с кем есть общие друзья</p>
+                    <input type="checkbox" data-value="false" />
+                    <span class="add-settings-panel__label-container--checkmark-checkbox"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="add-settings-panel__group-filters">
+                <h2>Групповой фильтр:</h2>
+                <hr />
+                <div class="add-settings-panel__group-filters--city">
+                  <p>Город:</p>
+                  <input type="text" name="word" data-value="" />
+                </div>
+
+                <div class="add-settings-panel__group-filters--members_count">
+                  <p>Количество участников:</p>
+                  <span>От: </span>
+                  <input type="number" />
+                  <span>До: </span>
+                  <input type="number" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Главная панель фильтров поиска -->
+        <div class="settings-panel">
+          <div class="settings-panel__radius">
+            <h2>Выберите радиус поиска:</h2>
+            <form>
+              <label class="settings-panel__label-container"
+                ><span>10 метров </span>
+                <input name="range" type="radio" data-value="10" />
+                <span class="settings-panel__label-container--checkmark"></span>
+              </label>
+              <label class="settings-panel__label-container"
+                ><span>100 метров </span>
+                <input name="range" type="radio" data-value="100" checked />
+                <span class="settings-panel__label-container--checkmark"></span>
+              </label>
+              <label class="settings-panel__label-container"
+                ><span>800 метров </span>в
+                <input name="range" type="radio" data-value="800" />
+                <span class="settings-panel__label-container--checkmark"></span>
+              </label>
+              <label class="settings-panel__label-container"
+                ><span>6000 метров </span>
+                <input name="range" type="radio" data-value="6000" />
+                <span class="settings-panel__label-container--checkmark"></span>
+              </label>
+              <label class="settings-panel__label-container"
+                ><span>50000 метров </span>
+                <input name="range" type="radio" data-value="50000" />
+                <span class="settings-panel__label-container--checkmark"></span>
+              </label>
+            </form>
+          </div>
+          <div class="settings-panel__sort">
+            <h2>Сортировка результатов:</h2>
+            <form>
+              <label class="settings-panel__label-container">
+                <span>По лайкам</span>
+                <input type="radio" name="sort" data-value="1" />
+                <span class="settings-panel__label-container--checkmark"></span>
+              </label>
+              <label class="settings-panel__label-container">
+                <span>По дате</span>
+                <input type="radio" name="sort" data-value="0" checked />
+                <span class="settings-panel__label-container--checkmark"></span>
+              </label>
+            </form>
+          </div>
+          <div class="settings-panel__time-bounds">
+            <h2>Временной диапазон:</h2>
+            <form>
+              <span>Дата начала:</span> <br />
+              <input class="settings-panel__time-bounds-data" type="date" /><br />
+              <span>Дата конца:</span> <br />
+              <input class="settings-panel__time-bounds-data" type="date" /><br />
+              <span>Поиск по слову:</span> <br />
+              <input class="settings-panel__time-bounds-word-search" type="text" data-value="" />
+              <br />
+            </form>
+          </div>
+          <div class="settings-panel__other-settings-button">
+            <button>Дополнительно</button>
+          </div>
+          <div class="settings-panel__submit">
+            <button>Поиск</button>
+          </div>
+        </div>
+        <!-- Сюда выводятся результаты -->
+        <div class="search-results-panel">
+          <div class="search-results-panel__close-panel">Скрыть результаты</div>
+          <div class="search-results-panel__show-more">
+            Показать еще
+          </div>
+          <div class="search-results-panel__row">
+            <!-- Сюда вставляются поочередно результаты -->
+
+            <!-- Конец row -->
+          </div>
+
+          <div class="search-results-panel__modal">
+            <span class="search-results-panel__modal--close-modal">x</span>
+            <div class="search-results-panel__modal--content">
+              <canvas class="search-results-panel__modal--img" id="img01"></canvas>
+              <!-- <img class="search-results-panel__modal--img" id="img01" /> -->
+              <div class="search-results-panel__content--description">
+                <div class="search-results-panel__description--main">
+                  <a
+                    class="search-results-panel__description--person-name"
+                    id="modal_name"
+                    href=""
+                  ></a>
+                  <a
+                    class="search-results-panel__description--person-anchor"
+                    id="modal_link"
+                    href=""
+                    >Ссылка ВК</a
+                  >
+                </div>
+
+                <hr />
+                <div class="search-results-panel__description--add">
+                  <span class="search-results-panel__description--date" id="date_modal"></span>
+                  <span
+                    class="search-results-panel__description--mark-on-map"
+                    id="label_on_map"
+                    href=""
+                    >Метка на карте</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/obtain-data-form.js"></script>
+    <script src="scripts/events.js"></script>
+
+    <script src="scripts/main.js"></script>
+    <!-- <script src="scripts/map.js"></script> -->
+  </body>
+</html>

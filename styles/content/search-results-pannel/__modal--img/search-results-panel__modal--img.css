@@ -1,0 +1,12 @@
+.search-results-panel__modal--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+/* .search-results-panel__modal--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+} */

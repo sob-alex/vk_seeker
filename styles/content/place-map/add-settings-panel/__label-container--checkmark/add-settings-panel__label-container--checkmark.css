@@ -1,0 +1,42 @@
+/* Create a custom radio button */
+.add-settings-panel__label-container--checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.add-settings-panel__label-container:hover input ~ .add-settings-panel__label-container--checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.add-settings-panel__label-container
+  input:checked
+  ~ .add-settings-panel__label-container--checkmark {
+  background-color: #222;
+}
+.add-settings-panel__label-container--checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.add-settings-panel__label-container
+  input:checked
+  ~ .add-settings-panel__label-container--checkmark:after {
+  display: block;
+}
+.add-settings-panel__label-container .add-settings-panel__label-container--checkmark:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: white;
+}

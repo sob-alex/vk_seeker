@@ -1,0 +1,32 @@
+{
+  "name": "vk_seeker",
+  "version": "1.0.0",
+  "productName ": "VK Seeker",
+  "description": "Find photos vk",
+  "main": "index.js",
+  "scripts": {
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "vk_seeker",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "nedb": "^1.8.0"
+  }
+}

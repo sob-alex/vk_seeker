@@ -1,0 +1,6 @@
+.header__window-buttons--close {
+  background: radial-gradient(#dd0000 50%, #aa0000 90%);
+}
+.header__window-buttons--close:hover {
+  background: radial-gradient(#ff0000 50%, #bb0000 90%);
+}

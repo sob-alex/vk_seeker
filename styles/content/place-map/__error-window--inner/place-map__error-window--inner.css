@@ -1,0 +1,19 @@
+.place-map__error-window--inner {
+  position: relative;
+  background-color: #fafafa;
+  width: 400px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 5px 0px #333;
+}
+
+.place-map__error-window--inner i {
+  cursor: pointer;
+
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.place-map__error-window--inner h3 {
+  color: #333;
+}

@@ -1,0 +1,17 @@
+.header__inner--window-buttons {
+  position: absolute;
+  display: flex;
+  right: 20px;
+}
+.header__inner--window-buttons div {
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  padding-top: 2px;
+  text-align: center;
+  margin-left: 15px;
+  color: #111;
+  border-radius: 50px;
+  -webkit-app-region: no-drag;
+  -webkit-user-select: none;
+}

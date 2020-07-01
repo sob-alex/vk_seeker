@@ -1,0 +1,25 @@
+.place-map__search-sity-pannel {
+  position: absolute;
+  display: flex;
+  left: 80px;
+  top: 12px;
+  background-color: #393939;
+  padding: 5px;
+  z-index: 1;
+  border-radius: 5px;
+}
+.place-map__search-sity-pannel input {
+  width: 200px;
+  border: none;
+  background-color: #f9f9f9;
+  color: #333;
+  padding-left: 5px;
+}
+.place-map__search-sity-pannel i {
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.place-map__search-sity-pannel i:hover {
+  color: darkorange;
+}

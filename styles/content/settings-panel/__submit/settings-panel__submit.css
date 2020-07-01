@@ -1,0 +1,11 @@
+.settings-panel__submit button {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 45px;
+  font-size: 1.2em;
+  font-variant: small-caps;
+
+  color: #222;
+}

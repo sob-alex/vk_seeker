@@ -1,0 +1,18 @@
+.search-results-panel__content--description {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 3;
+  text-shadow: 1.5px 1.5px 1px rgb(10, 10, 10);
+}
+.search-results-panel__content--description hr {
+  margin-top: 10px;
+  border: 0.7px solid rgba(200, 200, 200, 0.9);
+  box-shadow: 1px 1px 1px 0px rgba(10, 10, 10, 0.8);
+}

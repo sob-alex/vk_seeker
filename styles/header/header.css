@@ -1,0 +1,17 @@
+.header {
+  position: relative;
+  height: 7.5%;
+}
+
+.header h1 {
+  margin: 0;
+  display: inline-block;
+  font-size: 1.9em;
+  line-height: 1.4em;
+  padding-left: 225px;
+  padding-right: 225px;
+  color: darkorange;
+  background: linear-gradient(#fbfbfb, #eaeaea);
+  font-variant: small-caps;
+  border-radius: 50px;
+}

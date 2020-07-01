@@ -1,0 +1,31 @@
+.add-settings-panel__label-container
+  input:checked
+  ~ .add-settings-panel__label-container--checkmark-checkbox {
+  background-color: #2e2e2e;
+}
+
+.add-settings-panel__label-container--checkmark-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 0%;
+}
+.add-settings-panel__label-container--checkmark-checkbox:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.add-settings-panel__label-container
+  input:checked
+  ~ .add-settings-panel__label-container--checkmark-checkbox:after {
+  top: 5px;
+  left: 5px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 0%;
+  background: white;
+}
