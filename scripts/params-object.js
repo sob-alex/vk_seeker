@@ -1,5 +1,5 @@
 let params = {
-  token: '185541d4f781dd8f6f74be73ec6a7674e9a6318e2745008c80e4b5b5c1897663fe59ef9f84e1d0ad07814',
+  token: '',
   radius: 100, //10, 100, 800, 6000, 50000
   lat: 52,
   long: 87,
