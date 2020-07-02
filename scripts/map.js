@@ -3,7 +3,7 @@ module.exports.map = async function () {
 
   let map_;
 
-  db = new Datastore({ filename: 'cities' });
+  db = new Datastore({ filename: 'city/cities.txt' });
   db.loadDatabase();
 
   // загрузка карты
