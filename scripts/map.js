@@ -23,7 +23,7 @@ module.exports.map = async function () {
   // получение карты по айди и установка центра и масштаба на карте
   map_ = DG.map('map', {
     center: [52.26, 87.12],
-    zoom: 15,
+    zoom: 5,
   });
   console.log(map_);
   //Создаем маркер

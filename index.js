@@ -6,7 +6,7 @@ function createWindow() {
     width: 1200,
     height: 750,
     minWidth: 900,
-    minHeight: 620,
+    minHeight: 710,
 
     frame: false,
     nodeIntegration: true,
@@ -19,7 +19,7 @@ function createWindow() {
   win.loadFile('index.html');
 
   // Отображаем средства разработчика.
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
 }
 
 app.whenReady().then(createWindow);
