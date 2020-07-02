@@ -114,7 +114,7 @@ module.exports.map = async function () {
       console.log(docs);
       if (docs.length != 0) {
         console.log([changeToDot(docs[0].lat), changeToDot(docs[0].lng)]);
-        map_.setView([+changeToDot(docs[0].lat), +changeToDot(docs[0].lng)]);
+        map_.setView([+changeToDot(docs[0].lat), +changeToDot(docs[0].lng)], 12);
       }
     });
   };
