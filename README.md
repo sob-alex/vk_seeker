@@ -2,6 +2,8 @@
 It is desktop application which allows you to find VK ptotos on 2gis map by geolocation.  
 This app was created by Electron framework
 
+Замечание! Пока без установочника, по некоторым причинам. Разархивировать и запустить
+
 ## Download:
 [Download App](https://yadi.sk/d/aFpVBYgJiZs-LQ)
 
