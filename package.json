@@ -24,7 +24,7 @@
   "author": "sob-alex",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^9.0.0"
+    "electron": "^9.3.0"
   },
   "dependencies": {
     "axios": "^0.19.2",
